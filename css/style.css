@@ -1,5 +1,108 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Average&family=Fruktur&family=Hind:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quintessential&family=Redressed&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sen&family=Ubuntu:wght@300&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --text-black: #202020;
+  --bg-primary: #f57224;
+  --hover-color: #f67434;
+  --bg-gray: #ececec;
+  --transition: all 0.3s ease;
+}
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*========= header starts ============*/
+.header {
+  -webkit-box-shadow: 0px 0px 15px 0px #000000;
+  box-shadow: 0px 0px 15px 0px #000000;
+}
+/* topbar starts */
+.topbar {
+  background-color: var(--bg-gray);
+  height: 1.5625rem;
+}
+.row {
+  padding: 0px !important;
+}
+.link a {
+  color: var(--text-black);
+  font-size: 12px;
+  transition: var(--transition);
+}
+.links .link:first-child a {
+  color: var(--hover-color);
+}
+.link a:hover {
+  color: var(--hover-color);
+  text-decoration: underline;
+}
+/* topbar ends */
+/* logo & form container starts */
+.logo {
+  width: 135px;
+  height: 41px;
+}
+.download_logo {
+  width: 188px;
+  height: 45px;
+}
+.search_form_container {
+  width: 688px;
+  height: 45px;
+  position: relative;
+  background: var(--hover-color);
+}
+.search_form_container .search {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px 10px;
+  background: var(--bg-gray);
+  border: 0;
+  outline: none;
+}
+.search_form_container .search_icon_container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: inherit;
+  background-color: var(--hover-color);
+  z-index: 111;
+  display: grid;
+  place-items: center;
+}
+.icofont-search-2 {
+  font-size: 24px;
+  color: white;
+}
+.cart_icon_container {
+  width: 40px;
+  height: 100%;
+  margin-left: 102%;
+  display: grid;
+  place-items: center;
+}
+.icofont-cart-alt {
+  font-size: 30px;
+}
+
+/* logo & form container ends */
+/*========= header ends ============*/
