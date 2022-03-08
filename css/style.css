@@ -106,3 +106,38 @@ a {
 
 /* logo & form container ends */
 /*========= header ends ============*/
+
+/*========= slider starts ============*/
+
+.carousel-indicators {
+  margin: 0 auto;
+}
+
+.carousel-indicators button {
+  height: 10px !important;
+  width: 10px !important;
+  margin: 0 3px !important;
+  border-radius: 100%;
+  background-color: #ffffff !important;
+}
+.slider {
+  display: grid;
+  place-items: center;
+  background: #673363;
+  position: relative;
+}
+.slider div {
+  width: 900px;
+}
+.carousel-item img {
+  width: 100%;
+}
+.dropdown {
+  position: absolute;
+  top: 0;
+  left: 300px;
+}
+/*========= slider ends ============*/
+/*========= ad start ============*/
+
+/*========= ad ends ============*/
